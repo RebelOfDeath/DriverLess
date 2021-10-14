@@ -228,17 +228,17 @@ a::after {
     display: inline-block;
     letter-spacing: 0.1em;
     position: absolute;
-    bottom: 35%;
+    bottom: 25%;
 }
 
 .seperate-P{
   
-  right: 50.5vw;
+  right: 49.5vw;
   z-index: 5;
 }
 
 .seperate-C{
-  left: 50.5vw;
+  left: 49.5vw;
   z-index: 6;
 }
 
