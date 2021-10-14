@@ -233,12 +233,12 @@ a::after {
 
 .seperate-P{
   
-  right: 50vw;
+  right: 50.vw;
   z-index: 5;
 }
 
 .seperate-C{
-  left: 50vw;
+  left: 50.5vw;
   z-index: 6;
 }
 
