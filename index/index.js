@@ -11,4 +11,20 @@ setTimeout(function(){
 //region for typewriter animation of intro modules section
 //#region
 
+const typewriter = document.querySelector(".typewriter")
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("typewriter-animation")
+    }
+  })
+}
+
+const options = {}
+
+const myObserver = new IntersectionObserver(callback, options)
+
+myObserver.observe(typewriter)
+
 //#endregion

@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 .first-sight {
@@ -441,6 +442,9 @@ a::after {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .05em;
+}
+
+.typewriter-animation{
     animation: 
     typing 5s steps(30, end),
     blink-caret .5s step-end infinite;
