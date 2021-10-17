@@ -166,7 +166,6 @@ a {
     color: var(--icon-hover-bg);
 }
 a::after {
-    content: "\e806";
     display: inline-block;
     font-family: fontello;
     padding: 5px;
@@ -316,7 +315,7 @@ a::after {
         margin-right: 0vw;
     }
     100% {
-        margin-right: 25vw;
+        margin-right: 24.5vw;
     }
 }
 
@@ -325,7 +324,7 @@ a::after {
         margin-left: 0vw;
     }
     100% {
-        margin-left: 25vw;
+        margin-left: 24.5vw;
     }
 }
 
@@ -413,12 +412,50 @@ a::after {
 
 /* start of region for intro to modules */
 /* #region */
+#intro-to-modules > a{
+    text-decoration: none;
+    content: none;
+}
 .intro-to-modules {
     display: block;
     position: absolute;
-    width: 100%;
     height: 30vh;
+    width: 100%;
     top: 100vh;
-    background-color: red;
+    background-color: var(--home-bg-color);
+    text-align: center;
+    color: var(--text-color);
 }
+
+.typewriter{
+    margin-top: 10vh;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: inline-block;
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    top: 7vw;
+    overflow: hidden;
+    border-right: .15em solid #f5cb5c;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: 
+    typing 5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80vw }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f5cb5c }
+}
+
 /* #endregion */
+
+
