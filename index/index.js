@@ -28,3 +28,5 @@ const myObserver = new IntersectionObserver(callback, options)
 myObserver.observe(typewriter)
 
 //#endregion
+
+

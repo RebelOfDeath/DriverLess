@@ -235,251 +235,249 @@ a::after {
 
 /*#endregion*/
 
-/* start of region for seperating PC*/
+/* start of region for contact form */
 /* #region */
 
-.seperate-PC {
-    width: 100%;
-    height: 100%;
-}
-
-.seperate-PC > div {
-    font-size: 300px;
-    display: inline-block;
-    letter-spacing: 0.1em;
-    position: absolute;
-    bottom: 25%;
-}
-
-.seperate-P {
-    right: 49.5vw;
-    z-index: 5;
-}
-
-.seperate-C {
-    left: 49.5vw;
-    z-index: 6;
-}
-
-.seperate-C {
-    animation-name: to-right;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-.seperate-P {
-    animation-name: to-left;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-/* .pictures {
-    position: absolute;
-    width: 50vw;
-    margin-left: 25vw;
-    justify-content: center;
-}
-
-#front-picture {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    height: 90%;
-}
-
-#front-picture > img {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    max-height: 70%;
-    height: 80vh;
-    opacity: 0%;
-    animation-name: reveal-image;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-} */
-
-#test-image{
-    position: absolute;
+.whole-form {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     display: block;
-    height: 80vh;
-    bottom: 10vh;
-    left: calc(50vw - 14vw);
-    opacity: 0%;
-    animation-name: reveal-image;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
+    margin-top: 10vw;
 }
 
-@keyframes to-left {
-    0% {
-        margin-right: 0vw;
-    }
-    100% {
-        margin-right: 24.5vw;
-    }
+button {
+    overflow: visible;
 }
 
-@keyframes to-right {
-    0% {
-        margin-left: 0vw;
-    }
-    100% {
-        margin-left: 24.5vw;
-    }
+button,
+select {
+    text-transform: none;
 }
 
-@keyframes reveal-image {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
+button,
+input,
+select,
+textarea {
+    color: var(--text-color);
+    font: inherit;
+    margin: 0;
 }
 
-/* #endregion */
-
-/*  start of refion for scroll down toggle */
-/* #region */
-
-.arrows {
-    width: 60px;
-    height: 72px;
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    bottom: 20px;
+input {
+    line-height: normal;
 }
 
-.arrows path {
-    stroke: var(--text-color);
-    fill: transparent;
-    stroke-width: 1px;
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite;
+textarea {
+    overflow: auto;
 }
 
-@keyframes arrow {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+#container {
+    border: solid 3px var(--text-color);
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+form {
+    padding: 37.5px;
+    margin: 50px 0;
 }
 
-.arrows path.a1 {
-    animation-delay: -1s;
-    -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+h1 {
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.arrows path.a2 {
-    animation-delay: -0.5s;
-    -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+.underline {
+    border-bottom: solid 2px var(--home-bg-color);
+    margin: -0.512em auto;
+    width: 80px;
 }
 
-.arrows path.a3 {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
 }
 
-.hide {
+.icon {
+    display: block;
+    fill: var(--text-color);
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px var(--text-color);
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+        no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
     display: none;
 }
 
-/* #endregion */
-
-/* start of region for intro to modules */
-/* #region */
-#intro-to-modules > a{
-    text-decoration: none;
-    content: none;
-}
-.intro-to-modules {
-    display: block;
-    position: absolute;
-    height: 30vh;
+.subject {
     width: 100%;
-    top: 100vh;
-    background-color: var(--home-bg-color);
-    text-align: center;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
     color: var(--text-color);
 }
 
-.typewriter{
-    margin-top: 10vh;
-    text-decoration: none;
-    font-family: sans-serif;
+:-moz-placeholder {
+    color: var(--text-color);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: var(--text-color);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: var(--text-color);
+}
+
+#form_button {
+    background: none;
+    border: solid 2px var(--text-color);
+    color: var(--text-color);
+    cursor: pointer;
     display: inline-block;
-    position: absolute;
-    width: 80vw;
-    left: 10vw;
-    top: 7vw;
-    overflow: hidden;
-    border-right: .15em solid #f5cb5c;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .05em;
+    font-family: sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.typewriter-animation{
-    animation: 
-    typing 5s steps(30, end),
-    blink-caret .5s step-end infinite;
+#form_button:hover {
+    background: #474544;
+    color: #f2f3eb;
 }
 
-.select-module{
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    top: 30vh;
-    background-color: var(--home-bg-color);
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 80vw }
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #f5cb5c }
-}
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
 
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type="text"],
+    [type="email"],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
 /* #endregion */
 
+#sent > h1{
+    margin-top: 30vh;
+    font-size: 100px;
+}
+
+#sent > h1 > a{
+    font-size: 150px;
+}
 
