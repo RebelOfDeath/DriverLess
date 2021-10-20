@@ -29,4 +29,26 @@ myObserver.observe(typewriter)
 
 //#endregion
 
-
+//region for choosing right page to start
+//#region
+function checkform1(){
+  if(document.getElementById('yes1').checked){
+    document.getElementById('recommendation').innerHTML = 'Weet jij al welke algemene componenten er bestaan?';
+    document.getElementById('form1').classList.add('hide');
+    document.getElementById('form2').classList.remove('hide');
+  }
+  else{
+    document.getElementById('recommendation').innerHTML = 'je zou het best bij <a href="./Arduino/arduino.html">Arduino</a> kunnen beginnen';
+    document.getElementById('form1').classList.add('hide');
+  }
+}
+function checkform2(){
+  if(document.getElementById('yes2').checked){
+    document.getElementById('recommendation').innerHTML = 'Wow! jij weet al super veel. Je kan direct naar de <a href="./Opdrachten/opdrachten.html">opdrachten</a>';
+    document.getElementById('form2').classList.add('hide');
+  }else{
+    document.getElementById('recommendation').innerHTML = 'je bent er bijna! je moet wel eerst weten welke <a href="./Componenten/componenten.html">componenten</a> er zijn.';
+    document.getElementById('form2').classList.add('hide');
+  }
+}
+//#endregion
