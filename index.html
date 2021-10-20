@@ -34,7 +34,9 @@
                         <li>Componenten</li>
                         <li>Opdrachten</li>
                         <li>Fantasy ontwerp</li>
-                        <li><a href="./contact/contact.html">Neem contact</a></li>
+                        <li>
+                            <a href="./contact/contact.html">Neem contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -85,22 +87,42 @@
                 </h1>
             </div>
             <div class="select-module">
-                <div id="recommendation">Heb je ooit eerder met Arduino's gewerkt?</div>
+                <div id="recommendation">
+                    Heb je ooit eerder met Arduino's gewerkt?
+                </div>
                 <div class="yesno">
-                    <form onchange="checkform1()" id="form1">
-                        <input type="radio" id="yes1" name="yesno1" value="yes">
-                        <label for="yes">YES</label>
-                        <input type="radio" id="no1" name="yesno1" value="no">
-                        <label for="no">NO</label>
+                    <form id="form1">
+                        <input
+                            type="radio"
+                            id="yes1"
+                            name="yesno1"
+                            value="yes"
+                        />
+                        <button for="yes1" type="button" onclick="good1()">
+                            JA
+                        </button>
+                        <input type="radio" id="no1" name="yesno1" value="no" />
+                        <button for="no1" type="button" onclick="bad1()">
+                            NEE
+                        </button>
                     </form>
-                    <form onchange="checkform2()" class="hide" id="form2">
-                        <input type="radio" id="yes2" name="yesno2" value="yes">
-                        <label for="yes">YES</label>
-                        <input type="radio" id="no2" name="yesno2" value="no">
-                        <label for="no">NO</label>
+                    <form class="hide" id="form2">
+                        <input
+                            type="radio"
+                            id="yes2"
+                            name="yesno2"
+                            value="yes"
+                        />
+                        <button for="yes2" type="button" onclick="good2()">
+                            JA
+                        </button>
+                        <input type="radio" id="no2" name="yesno2" value="no" />
+                        <button for="no2" type="button" onclick="bad2()">
+                            NEE
+                        </button>
                     </form>
-                </div> 
-            </div>   
+                </div>
+            </div>
         </div>
     </body>
     <script src="./index/index.js"></script>

@@ -308,7 +308,7 @@ a::after {
     animation-duration: 2s;
 } */
 
-#test-image{
+#test-image {
     position: absolute;
     display: block;
     height: 80vh;
@@ -424,7 +424,7 @@ a::after {
 
 /* start of region for intro to modules */
 /* #region */
-#intro-to-modules > a{
+#intro-to-modules > a {
     text-decoration: none;
     content: none;
 }
@@ -439,7 +439,7 @@ a::after {
     color: var(--text-color);
 }
 
-.typewriter{
+.typewriter {
     margin-top: 10vh;
     text-decoration: none;
     font-family: sans-serif;
@@ -449,19 +449,17 @@ a::after {
     left: 10vw;
     top: 7vw;
     overflow: hidden;
-    border-right: .15em solid #f5cb5c;
+    border-right: 0.15em solid #f5cb5c;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
 }
 
-.typewriter-animation{
-    animation: 
-    typing 5s steps(30, end),
-    blink-caret .5s step-end 10;
+.typewriter-animation {
+    animation: typing 5s steps(30, end), blink-caret 0.5s step-end 10;
 }
 
-.select-module{
+.select-module {
     display: block;
     position: absolute;
     width: 100%;
@@ -471,32 +469,97 @@ a::after {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 80vw }
+    from {
+        width: 0;
+    }
+    to {
+        width: 80vw;
+    }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #f5cb5c }
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #f5cb5c;
+    }
 }
 
 /* #endregion */
 
 /* start of region for chosing module */
 /* #region */
-.offset {
-	 box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--text-color);
-}
- .offset:hover, .offset:focus {
-	 box-shadow: 0 0 0 0 var(--text-color), inset 6em 3.5em 0 0 var(--text-color);
+.yesno {
+    font-size: sans-serif;
 }
 
-.yesno > button {
-    background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
+.yesno > form > input[type="radio"] {
+    display: none;
 }
+
+#recommendation {
+    margin-top: 15vh;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+form > span {
+    font-family: sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    width: 30vw;
+    height: 10vh;
+    margin-top: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+form > button {
+    height: 10vh;
+    width: 30vw;
+    margin-top: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--text-color);
+	background: var(--home-bg-color);
+	border: 2px solid var(--text-color);
+	box-shadow: 5px 5px 0 var(--text-color),
+		-5px -5px 0 var(--text-color),
+		-5px 5px 0 var(--text-color),
+		5px -5px 0 var(--text-color);
+	transition: 500ms ease-in-out;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 var(--text-color), -20px -5px 0 var(--text-color);
+}
+
+button:focus {
+	outline: none;
+}
+
+#recommendation > a{
+    font-family: sans-serif;
+    font-size: 45px;
+}
+
 /* #endregion */
