@@ -478,6 +478,7 @@ textarea {
 }
 
 #sent > h1 > a{
+    font-family: sans-serif;
     font-size: 150px;
 }
 

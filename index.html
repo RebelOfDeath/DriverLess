@@ -30,10 +30,20 @@
                 <div class="ham-menu">
                     <ul class="centre-text bold-text">
                         <li><a href="./index.html">Thuis</a></li>
-                        <li>Arduino</li>
-                        <li>Componenten</li>
-                        <li>Opdrachten</li>
-                        <li>Fantasy ontwerp</li>
+                        <li><a href="./Arduino/arduino.html">Arduino</a></li>
+                        <li>
+                            <a href="./Componenten/componenten.html"
+                                >Componenten</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./Opdrachten/opdrachten.html"
+                                >Opdrachten</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./Fantasy/fantasy.html">Fantasy ontwerp</a>
+                        </li>
                         <li>
                             <a href="./contact/contact.html">Neem contact</a>
                         </li>
@@ -87,43 +97,58 @@
                 </h1>
             </div>
             <div class="select-module">
-                <div id="recommendation">
-                    Heb je ooit eerder met Arduino's gewerkt?
-                </div>
-                <div class="yesno">
-                    <form id="form1">
-                        <input
-                            type="radio"
-                            id="yes1"
-                            name="yesno1"
-                            value="yes"
-                        />
-                        <button for="yes1" type="button" onclick="good1()">
-                            JA
-                        </button>
-                        <input type="radio" id="no1" name="yesno1" value="no" />
-                        <button for="no1" type="button" onclick="bad1()">
-                            NEE
-                        </button>
-                    </form>
-                    <form class="hide" id="form2">
-                        <input
-                            type="radio"
-                            id="yes2"
-                            name="yesno2"
-                            value="yes"
-                        />
-                        <button for="yes2" type="button" onclick="good2()">
-                            JA
-                        </button>
-                        <input type="radio" id="no2" name="yesno2" value="no" />
-                        <button for="no2" type="button" onclick="bad2()">
-                            NEE
-                        </button>
-                    </form>
+                <div class="frame_for_recom" id="frame_for_recom">
+                    <div id="recommendation">
+                        <!-- Heb je ooit eerder met Arduino's gewerkt? -->
+                        Neem ons quiz, en krijg van ons waar je moet beginnen.
+                    </div>
+                    <div class="yesno">
+                        <button type="button" onclick="beginquiz()" id="begin_quiz">BEGIN QUIZ!</button>
+                        <form id="form1" class="hide">
+                            <input
+                                type="radio"
+                                id="yes1"
+                                name="yesno1"
+                                value="yes"
+                            />
+                            <button for="yes1" type="button" onclick="good1()">
+                                JA
+                            </button>
+                            <input
+                                type="radio"
+                                id="no1"
+                                name="yesno1"
+                                value="no"
+                            />
+                            <button for="no1" type="button" onclick="bad1()">
+                                NEE
+                            </button>
+                        </form>
+                        <form class="hide" id="form2">
+                            <input
+                                type="radio"
+                                id="yes2"
+                                name="yesno2"
+                                value="yes"
+                            />
+                            <button for="yes2" type="button" onclick="good2()">
+                                JA
+                            </button>
+                            <input
+                                type="radio"
+                                id="no2"
+                                name="yesno2"
+                                value="no"
+                            />
+                            <button for="no2" type="button" onclick="bad2()">
+                                NEE
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
     <script src="./index/index.js"></script>
+    <script></script>
 </html>

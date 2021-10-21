@@ -16,7 +16,8 @@ const typewriter = document.querySelector(".typewriter")
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("typewriter-animation")
+      entry.target.classList.add("typewriter-animation");
+      document.getElementById('frame_for_recom').classList.add('fade_in_form');
     }
   })
 }
@@ -51,6 +52,11 @@ myObserver.observe(typewriter)
 //     document.getElementById('form2').classList.add('hide');
 //   }
 // }
+function beginquiz(){
+  document.getElementById('recommendation').innerHTML = "Heb je ooit eerder met Arduino's gewerkt?";
+  document.getElementById('begin_quiz').classList.add('hide');
+  document.getElementById('form1').classList.remove('hide');
+}
 function good1(){
     document.getElementById('recommendation').innerHTML = 'Weet jij al welke algemene componenten er bestaan?';
     document.getElementById('form1').classList.add('hide');
