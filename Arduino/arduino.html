@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="./arduino.css" />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <title>RJR - Physical Computing</title>
+    </head>
+    <body>
+        <div class="first-sight">
+            <nav>
+                <div class="logo">
+                    <img src="../index/images/logo.svg" alt="RJR logo" />
+                    <h1>RJR</h1>
+                </div>
+
+                <input type="checkbox" id="ham-menu" />
+                <label for="ham-menu">
+                    <div class="hide-des">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </div>
+                </label>
+                <div class="full-page-green"></div>
+                <div class="ham-menu">
+                    <ul class="centre-text bold-text">
+                        <li><a href="../index.html">Thuis</a></li>
+                        <li><a href="../Arduino/arduino.html">Arduino</a></li>
+                        <li>
+                            <a href="../Componenten/componenten.html"
+                                >Componenten</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../Opdrachten/opdrachten.html"
+                                >Opdrachten</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../Fantasy/fantasy.html">Fantasy ontwerp</a>
+                        </li>
+                        <li>
+                            <a href="../contact/contact.html">Neem contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           <div id="aSide">
+            <model-viewer src='./3d_assets/arduino.glb' alt="Arduino Uno" auto-rotate camera-controls ar ios-src='./3d_assets/arduino.glb'>
+            </model-viewer>
+           </div> 
+           <a href="#intro-to-modules">
+                <svg class="arrows hide" id="arrow-down">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="intro-to-modules" id="intro-to-modules">
+
+        </div>
+    </body>
+    <script src="./arduino.js"></script>
+    <script></script>
+</html>
