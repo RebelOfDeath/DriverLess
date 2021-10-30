@@ -7,6 +7,7 @@
 *,
 *::before,
 *::after {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,7 +68,6 @@ label[for="ham-menu"] {
 .ham-menu > ul > li {
     font-size: 5rem;
     white-space: nowrap;
-    letter-spacing: 0.15em;
     cursor: pointer;
     color: var(--text-color);
 }
@@ -75,7 +75,6 @@ label[for="ham-menu"] {
 .ham-menu > ul > li > a {
     font-size: 5rem;
     white-space: nowrap;
-    letter-spacing: 0.15em;
     cursor: pointer;
     text-decoration: none;
     font-family: sans-serif;
@@ -170,7 +169,6 @@ a {
     font-size: 1.6rem;
     line-height: 1.5em;
     word-spacing: 0.5em;
-    letter-spacing: 0.1em;
     font-family: "OpenSansCondensed-Light";
     display: inline;
     font-weight: bold;
@@ -431,7 +429,7 @@ a::after {
 .intro-to-modules {
     display: block;
     position: absolute;
-    height: 30vh;
+
     width: 100%;
     top: 100vh;
     background-color: var(--home-bg-color);
@@ -440,18 +438,15 @@ a::after {
 }
 
 .typewriter {
-    margin-top: 10vh;
     text-decoration: none;
     font-family: sans-serif;
     display: inline-block;
-    position: absolute;
     width: 80vw;
     left: 10vw;
-    top: 7vw;
     overflow: hidden;
     border-right: 0.15em solid #f5cb5c;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 5vh auto;
     letter-spacing: 0.05em;
 }
 
@@ -621,7 +616,37 @@ button:focus {
 }
 
 #intro-to-modules {
-    height: 200vh;
+    height: auto;
+    font-family: sans-serif ;
+}
+
+div main section h1, div main section p, div main section h2 {
+    font-family: sans-serif;
+    display: block;
+}
+
+div main section h1, div main section h2 {
+    margin: 50px auto;
+    font-size: 3em;
+}
+
+div main section p {
+    width: 60vw;
+    margin: 30px auto;
+}
+
+div main section iframe {
+    width: 60vw;
+    height: calc(0.56 * 60vw);
+}
+
+div main section img {
+    width: 60vw;
+}
+
+#typewriter a{
+    font-family: sans-serif;
+    font-size: 1.2em;
 }
 /* #endregion */
 
