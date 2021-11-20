@@ -168,13 +168,13 @@ p {
     line-height: 1.5em;
     word-spacing: 0.2em;
     letter-spacing: 0.1em;
-    font-family: "OpenSansCondensed-Light";
-}
+    font-family: sans-serif;
+}Light
 a {
     font-size: 1.6rem;
     line-height: 1.5em;
     word-spacing: 0.5em;
-    font-family: "OpenSansCondensed-Light";
+    font-family: sans-serif;
     display: inline;
     font-weight: bold;
     padding: 7px;
@@ -192,14 +192,14 @@ a::after {
     line-height: 1.5em;
     word-spacing: 0.5em;
     letter-spacing: 0.1em;
-    font-family: "OpenSansCondensed-Bold", sans-serif;
+    font-family: sans-serif;
 }
 .title {
     font-size: 3rem;
     line-height: 1.5em;
     word-spacing: 0.5em;
     letter-spacing: 0.1em;
-    font-family: "OpenSansCondensed-Bold", sans-serif;
+    font-family: sans-serif;
     color: var(--icon-hover-bg);
     padding: 10px;
 }
@@ -208,7 +208,7 @@ a::after {
     line-height: 1.5em;
     word-spacing: 0.5em;
     letter-spacing: 0.1em;
-    font-family: "Patua One";
+    font-family: sans-serif;
 }
 .centre-text {
     text-align: center;
@@ -660,6 +660,8 @@ div main section img {
 
 /* #region */
 
+.carousel > h1 {
+    font-size: 300; }
 
 html > p,
 body > p {
@@ -761,10 +763,22 @@ body > .carousel {
     border-style: solid;
 }
 .carousel__body .carousel__slider__item .item__3d-frame__box h1 {
-    font-size: 7em;
+    font-size: 2.5rem;
     width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 20px;
     color: var(--box-border);
 }
+
+.carousel__body .carousel__slider__item .item__3d-frame__box img {
+    width: 80%;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+}
+
 .carousel__body .carousel__slider__item .item__3d-frame__box--right,
 .carousel__body .carousel__slider__item .item__3d-frame__box--left {
     top: 0;
@@ -783,5 +797,181 @@ body > .carousel {
     transform: translate3d(-1px, 0, -40px) rotateY(90deg);
     transform-origin: 100%;
 }
+
+/* #endregion */
+
+/* this is the region for the modal */
+/* #region */
+
+.posts-box {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.posts-box li {
+  display: inline-block;
+  width: 320px;
+  max-width: 100%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.card {
+  text-align: left;
+  border-radius: 2px;
+  background: var(--text-color);
+  box-shadow:
+    0 2px 4px rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(255, 255, 255, 0.22);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card div {
+  padding: 16px 20px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.card div h3 {
+  margin: 8px 0;
+  font-size: .9em;
+}
+
+.card div p {
+  margin: 8px 0;
+  font-size: .9em;
+}
+
+.button {
+  color: #6d676e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+/* Page */
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  letter-spacing: 0.6;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--home-bg-color);
+  overflow: auto;
+}
+
+.modal-box {
+  font-family: sans-serif !important;
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  background: var(--text-color);
+  color: var(--home-bg-color);
+  animation-name: modalbox;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+}
+
+.modal-header img {
+  width: 100%;
+}
+
+.modal-body {
+  padding: 60px 8%;
+}
+
+.modal-body h2 {
+    font-size: 3em;
+}
+
+.modal-body h3 {
+    font-size: 2.5em;
+    margin: 40px 0px 20px 0px;
+}
+
+.modal-body p {
+    font-size: 2em;
+}
+
+.inner-title {
+    margin: 20px 0px;
+}
+
+
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+button {
+  min-width: 120px;
+  top: 50%;
+  left: 50%;
+  padding: 16px 32px;
+  margin: 24px 8px 0 0;
+  background: transparent;
+  text-decoration: none;
+  border: 1px solid #6d676e;
+  outline: none;
+  color: #6d676e;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: .4;
+  cursor: auto;
+}
+
+@media (max-width: 620px) {
+  button {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
 
 /* #endregion */
