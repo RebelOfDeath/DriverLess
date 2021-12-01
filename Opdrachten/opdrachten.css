@@ -899,8 +899,9 @@ body > .carousel {
   animation-timing-function: ease-out;
 }
 
-.modal-header img {
-  width: 100%;
+.modal-header iframe {
+    aspect-ratio: 5 / 4;
+    width: 100%;
 }
 
 .modal-body {

@@ -3,11 +3,10 @@
 
 var post=[
   {
-    postTitle: "Lorem ipsum dolor",
+    postTitle: "Opdracht 8",
     postAbstract: "Voluptates sit ducimus velit soluta ed doloribus iste commodi deserunt aut unde, numquam illo, unde.",
-    postContent: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae placeat, inventore eligendi qui deserunt asperiores error laboriosam libero blanditiis dignissimos eius molestias cumque necessitatibus est. <b>Quae velit ad cupiditate necessitatibus</b>, facere eum earum ut odio nostrum labore a explicabo quasi voluptates, consequatur obcaecati quos, quis fugiat veniam ea ipsam consequuntur illo!</p><p>Aperiam fugit nulla, praesentium doloremque harum laborum ipsam officia minima. Alias saepe cumque mollitia soluta totam facere, iusto ab officiis cum itaque! Sit sint earum sequi quae mollitia quibusdam adipisci facere explicabo libero nihil! Velit aliquam asperiores possimus eligendi dolore reprehenderit similique suscipit.</p>",
-    postThumb: "https://drive.google.com/uc?id=1XlEn94sZcbvOmeP3Ws5tWrrB3d8Qygc7",
-    postImg: "https://drive.google.com/uc?id=12RhLJZygX4IJfcc5nFH_eJ4H2x_XuIuo",
+    postContent: "<h3>uitleg opdracht:</h3><br><br><p>bouw de schakeling op de vorige pagina na</p><br></bt><p>Bouw de bovenstaande schakeling na en test het.</p><p>Vergeet niet je USB-kabel met je ARDUINO te verbinden</p><p>Gaat het lampje branden als je de knop indrukt?</p>",
+    postImg: "https://drive.google.com/file/d/1n5a69KNUhKDxHfpoevlRYCWS9YvAcJE5/preview",
     postLink: "article-link1"
   },
   {
