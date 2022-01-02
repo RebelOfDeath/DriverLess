@@ -650,3 +650,7 @@ div main section img {
 }
 /* #endregion */
 
+.list-of-components {
+    font-size: 2rem;
+    line-height: 1.5em;
+}
