@@ -1063,3 +1063,10 @@ body {
 	 margin-top: auto;
 }
  
+
+.link-text-ex {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+}
