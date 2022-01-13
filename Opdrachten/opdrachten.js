@@ -161,3 +161,21 @@ function dissBtn(){
     $(".next-post").addClass("disabled");
   };
 };
+
+
+const text1 = document.getElementById('text-1');
+const text2 = document.getElementById('text-2');
+const text3 = document.getElementById('text-3');
+
+
+text1.addEventListener('click', () => {
+  window.open("https://docs.google.com/document/d/1gFFW1yjylHUBgyGPrf3ohWYo3hDnBRLLXxs8gp4-Me0/edit?usp=sharing");
+});
+
+text2.addEventListener('click', () => {
+  window.open("https://docs.google.com/document/d/1hl3usQurSY9FtV9AtohaBmwxZETK_7_ENNox7bu6uLw/edit?usp=sharing");
+});
+
+text3.addEventListener('click', () => {
+  window.open("https://docs.google.com/document/d/1DWkqycSJWOGC2YqsqvEaV-mdpENNCFwTNHXACcTusMg/edit?usp=sharing");
+});
