@@ -1070,3 +1070,9 @@ body {
     text-decoration: none;
     font-size: .8em;
 }
+
+#text-1,
+#text-2,
+#text-3 {
+    cursor: poitner;
+}
