@@ -6,4 +6,4 @@
 
 ### This repo is going to be used to store the website files of the above mentioned project
 
-#### This project is not yet finished
+#### This project is finished although there are some major bugs which could be fixed
